@@ -16,17 +16,17 @@ The goal of this project is to develop a GPU-accelerated image classification sy
 🚀 End-to-end AI deployment pipeline
 
 # 🛠 Tech Stack
-- Frontend
+- Frontend:
    HTML5
    CSS3
    JavaScript
-- Backend
+- Backend:
    Flask
-- Deep Learning Framework
+- Deep Learning Framework:
    PyTorch
-- Dataset
+- Dataset:
    PlantVillage Dataset
-- Hardware
+- Hardware:
    NVIDIA GPU (T4/H200 compatible)
 
 # 📊 Workflow
