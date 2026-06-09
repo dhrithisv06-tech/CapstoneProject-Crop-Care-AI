@@ -15,27 +15,31 @@ The goal of this project is to develop a GPU-accelerated image classification sy
 🎨 Modern and responsive UI/UX
 🚀 End-to-end AI deployment pipeline
 
-# 🛠 Technologies Used
-Python
-PyTorch
-Flask
-HTML5
-CSS3
-JavaScript
-NVIDIA GPU Acceleration(T4/H200 compatible)
-PlantVillage Dataset
+# 🛠 Tech Stack
+- Frontend
+   HTML5
+   CSS3
+   JavaScript
+- Backend
+   Flask
+- Deep Learning Framework
+   PyTorch
+- Dataset
+   PlantVillage Dataset
+- Hardware
+   NVIDIA GPU (T4/H200 compatible)
 
 # 📊 Workflow
 Leaf Image
-     ↓
+     ->
 Image Preprocessing
-     ↓
+     ->
 CNN Model
-     ↓
+     ->
 Disease Classification
-     ↓
+     ->
 Prediction Result
-     ↓
+     ->
 Web Interface Display
 
 # 🌍 Real-World Applications
