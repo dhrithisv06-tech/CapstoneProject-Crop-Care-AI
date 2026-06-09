@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌿 Crop Care AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <i class="fa-solid fa-seedling"></i>
+                <span>Crop Care AI</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#upload">Detection</a>
+                <a href="#performance">Performance</a>
+                <a href="#about">About</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-grid">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    🌿 AI Powered Agriculture
+                </div>
+
+                <h1>Crop Care AI</h1>
+
+                <h2>
+                    AI-Powered Plant Disease Detection and Crop Health Monitoring
+                </h2>
+
+                <p>
+                    Upload a leaf image and get instant AI-powered disease detection with confidence scoring.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#upload" class="btn btn-primary">
+                        Detect Disease
+                    </a>
+
+                    <a href="#about" class="btn btn-outline">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="glass hero-card">
+
+                    <div class="plant-circle">
+                        🌱
+                    </div>
+
+                    <h3>Smart Crop Analysis</h3>
+
+                    <p>
+                        CNN + Deep Learning + Computer Vision
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section class="stats">
+
+        <div class="container stats-grid">
+
+            <div class="glass stat-card">
+                <h3>96%</h3>
+                <span>Accuracy</span>
+            </div>
+
+            <div class="glass stat-card">
+                <h3>54K+</h3>
+                <span>Dataset Images</span>
+            </div>
+
+            <div class="glass stat-card">
+                <h3>38</h3>
+                <span>Disease Classes</span>
+            </div>
+
+            <div class="glass stat-card">
+                <h3>0.8s</h3>
+                <span>Detection Speed</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- UPLOAD -->
+
+    <section class="upload-section" id="upload">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Disease Detection Dashboard</h2>
+                <p>Upload a plant leaf image for AI analysis.</p>
+            </div>
+
+            <div class="glass upload-container">
+
+                <input type="file" id="fileInput" accept=".jpg,.jpeg,.png">
+
+                <br><br>
+
+                <img id="previewImage" style="display:none; max-width:300px; border-radius:20px;">
+
+                <br><br>
+
+                <button id="detectBtn" class="btn btn-primary">
+                    Detect Disease
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RESULT -->
+
+    <section class="result-section">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Prediction Result</h2>
+            </div>
+
+            <div class="glass result-card">
+
+                <h3>Tomato Early Blight</h3>
+
+                <p><strong>Confidence:</strong> 96.4%</p>
+
+                <p><strong>Status:</strong> Disease Detected</p>
+
+                <p><strong>Severity:</strong> High</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PERFORMANCE -->
+
+    <section class="performance" id="performance">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>AI Model Performance</h2>
+            </div>
+
+            <div class="metrics-grid">
+
+                <div class="glass metric-card">
+                    <h3>96%</h3>
+                    <p>Accuracy</p>
+                </div>
+
+                <div class="glass metric-card">
+                    <h3>94%</h3>
+                    <p>Precision</p>
+                </div>
+
+                <div class="glass metric-card">
+                    <h3>95%</h3>
+                    <p>Recall</p>
+                </div>
+
+                <div class="glass metric-card">
+                    <h3>94.5%</h3>
+                    <p>F1 Score</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="glass about-card">
+
+                <h2>About Crop Care AI</h2>
+
+                <p>
+                    Crop Care AI is an AI-powered plant disease detection system that uses
+                    Deep Learning, Computer Vision, and CNN models to identify diseases
+                    from plant leaf images quickly and accurately.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <h2>🌿 Crop Care AI</h2>
+
+            <p>
+                AI Powered Plant Disease Detection System
+            </p>
+
+            <p>
+                © 2026 All Rights Reserved
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
