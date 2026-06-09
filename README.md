@@ -17,17 +17,17 @@ The goal of this project is to develop a GPU-accelerated image classification sy
 
 # 🛠 Tech Stack
 - Frontend
-   HTML5
-   CSS3
-   JavaScript
+   =HTML5
+   =CSS3
+   =JavaScript
 - Backend
-   Flask
+   =Flask
 - Deep Learning Framework
-   PyTorch
+   =PyTorch
 - Dataset
-   PlantVillage Dataset
+   =PlantVillage Dataset
 - Hardware
-   NVIDIA GPU (T4/H200 compatible)
+   =NVIDIA GPU (T4/H200 compatible)
 
 # 📊 Workflow
 Leaf Image
